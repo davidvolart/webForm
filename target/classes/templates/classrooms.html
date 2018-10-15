@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>classrooms</title>
+</head>
+<body>
+<h1>List of classrooms</h1>
+
+<ul>
+
+    <li th:each="classLab : ${classroomLabList}" th:id="'user_' + ${classLab.name}">
+
+        <div><span><b>Name: </b></span><span th:text="${classLab.name}"></span></div>
+        <div><span><b>Capacity: </b></span><span th:text="${classLab.capacity}"></span></div>
+        <div><span><b>Orientation: </b></span><span th:text="${classLab.orientation}"></span></div>
+        <div><span><b>Plugs: </b></span><span th:text="${classLab.plugs}"></span></div>
+
+    </li>
+
+</ul>
+
+</body>
+</html>

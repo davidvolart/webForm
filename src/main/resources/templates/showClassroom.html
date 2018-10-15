@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>showClassroom</title>
+</head>
+<body>
+<h1 th:text="'Classroom identified by ' + ${clr.name} + ':'"/>
+<ul>
+    <li>
+        <div><span><b>Name: </b></span><span th:text="${clr.name}"></span></div>
+        <div><span><b>Capacity: </b></span><span th:text="${clr.capacity}"></span></div>
+        <div><span><b>Orientation: </b></span><span th:text="${clr.orientation}"></span></div>
+        <div><span><b>Plugs: </b></span><span th:text="${clr.plugs}"></span></div>
+    </li>
+</ul>
+</body>
+</html>
